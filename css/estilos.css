@@ -248,17 +248,20 @@ margin-top:30px;
 
 }
 
+
+
+
 .slide-track{
 
 display:flex;
 
 width:max-content;
 
-
 animation:
 scroll 40s linear infinite;
 
 }
+
 
 
 
@@ -357,9 +360,6 @@ z-index:
 }
 
 
-
-
-
 @keyframes scroll{
 
 
@@ -372,8 +372,6 @@ translateX(
 );
 
 }
-
-
 
 100%{
 
