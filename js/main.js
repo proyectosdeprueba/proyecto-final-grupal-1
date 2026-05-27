@@ -13,14 +13,12 @@ $(document).ready(function() {
         }
     });
 });
-/* EFECTO 3D TARJETAS */
 
 const cards =
 
 document.querySelectorAll(
 ".tarjeta-intro"
 );
-
 
 
 cards.forEach(card=>{
@@ -141,7 +139,3 @@ animate();
 
 
 });
-
-
-
-}
