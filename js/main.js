@@ -21,6 +21,7 @@ document.querySelectorAll(
 );
 
 
+
 cards.forEach(card=>{
 
 
