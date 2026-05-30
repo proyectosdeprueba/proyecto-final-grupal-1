@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC & Tech Store - Promociones</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Pc Store</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li class="dropdown">
+                    <a href="productos.html" class="dropdown-toggle">Productos y Precios ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="productos.html#laptops">Laptops de Juguete / Pro</a></li>
+                        <li><a href="productos.html#escritorio">PCs de Escritorio</a></li>
+                        <li><a href="productos.html#accesorios">Accesorios / Periféricos</a></li>
+                    </ul>
+                </li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="promociones.html" class="active">Promociones</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="promos-intro">
+            <h2>Ofertas y Descuentos Exclusivos</h2>
+            <p class="subtitulo">Equípate con los mejores componentes del mercado sin romper tu presupuesto. ¡Promociones por tiempo limitado!</p>
+        </section>
+
+        <section class="grid-productos">
+            <div class="tarjeta-producto promo-destacada">
+                <span class="badge-promo">¡Ahorra 15%!</span>
+                <img src="img/promo_combo.jpg" alt="Combo Actualización">
+                <h4>Combo Actualización Ryzen</h4>
+                <p>Incluye: Procesador AMD Ryzen 5 + Tarjeta Madre B550 + 16GB RAM DDR4.</p>
+                <div class="precios-promo">
+                    <span class="precio-antes">$380.00</span>
+                    <span class="precio-tag">$323.00</span>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto promo-destacada">
+                <span class="badge-promo">¡Envío Gratis!</span>
+                <img src="img/promo_pc.jpg" alt="PC Setup Oficina">
+                <h4>PC Office Starter</h4>
+                <p>Lista para trabajar o estudiar. Intel Core i5, 16GB RAM, SSD 480GB + Monitor 22".</p>
+                <div class="precios-promo">
+                    <span class="precio-antes">$550.00</span>
+                    <span class="precio-tag">$499.00</span>
+                </div>
+            </div>
+
+            <div class="tarjeta-producto promo-destacada">
+                <span class="badge-promo">¡2x1 Periféricos!</span>
+                <img src="img/promo_audio.jpg" alt="Audífonos Gamer">
+                <h4>Audífonos HyperX Cloud</h4>
+                <p>Llévate el segundo par con el 50% de descuento para tu compañero de equipo.</p>
+                <div class="precios-promo">
+                    <span class="precio-antes">$120.00</span>
+                    <span class="precio-tag">$90.00</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="separador">
+
+        <section class="cupones-seccion">
+            <h2>Tabla de Cupones Activos</h2>
+            <p class="text-center">Copia estos códigos en tu carrito de compras al finalizar tu pedido:</p>
+            
+            <div class="tabla-contenedor">
+                <table class="tabla-estilo">
+                    <thead>
+                        <tr>
+                            <th>Código del Cupón</th>
+                            <th>Descuento Aplicado</th>
+                            <th>Restricción / Condición</th>
+                            <th>Válido Hasta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="codigo-txt">FIRSTPASTE</span></td>
+                            <td><strong>$10.00 USD Fijos</strong></td>
+                            <td>Aplica únicamente en tu primera compra en la tienda.</td>
+                            <td>31/12/2026</td>
+                        </tr>
+                        <tr>
+                            <td><span class="codigo-txt">GUANACOTECH</span></td>
+                            <td><strong>5% Global</strong></td>
+                            <td>Válido en todo el catálogo de PCs de Escritorio.</td>
+                            <td>15/06/2026</td>
+                        </tr>
+                        <tr>
+                            <td><span class="codigo-txt">RGBFANS</span></td>
+                            <td><strong>15% en Periféricos</strong></td>
+                            <td>No aplica junto a otras promociones vigentes.</td>
+                            <td>05/06/2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pc Store - Proyecto Final Programación Frontend</p>
+        <p>Elaborado por: Marina Díaz de Rivera, Yoselin Saraí Maye, Emerson Gómez</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
