@@ -8,6 +8,41 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<div class="sidebar">
+
+    <a href="#">
+        <i class="fa-solid fa-house"></i>
+        <span>Inicio</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-users"></i>
+        <span>Conócenos</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-computer"></i>
+        <span>Productos</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-newspaper"></i>
+        <span>Noticias</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-tags"></i>
+        <span>Promociones</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-phone"></i>
+        <span>Contáctanos</span>
+    </a>
+
+</div>
 
     <header>
         <div class="logo">
@@ -133,14 +168,44 @@ class="galeria-item">
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Pc Store - Proyecto Final Programación Frontend</p>
-        <p>Elaborado por:</p>
-        <p>Marina Díaz de Rivera</p>
-        <p>Joselyn Saraí</p>
-        <p>Emerson</p>
-    </footer>
+   <footer>
+    <p>&copy; 2026 Pc Store - Proyecto Final Programación Frontend</p>
+    <p>Elaborado por:</p>
+    <p>Marina Díaz de Rivera</p>
+    <p>Joselyn Saraí</p>
+    <p>Emerson Gómez</p>
+</footer>
+<div class="robot-msg" id="robotMsg">
+    💬 ¿Necesitas ayuda?
+</div>
+<div class="robot-btn" id="robotBtn">
+    <img src="img/robot.png" alt="Robot">
+</div>
 
-    <script src="js/main.js"></script>
+<div class="chat-box" id="chatBox">
+
+    <div class="chat-header">
+    🤖 TechBot
+    <span id="cerrarChat">✖</span>
+</div>
+
+    <div class="chat-body">
+
+    <p>Hola 👋</p>
+    <p>¿Cómo puedo ayudarte?</p>
+
+    <button onclick="respuesta('productos')">Productos</button>
+    <button onclick="respuesta('promos')">Promociones</button>
+    <button onclick="respuesta('contacto')">Contacto</button>
+    <button onclick="respuesta('horario')">Horarios</button>
+
+    <div id="respuestaBot"></div>
+
+</div>
+
+</div>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
