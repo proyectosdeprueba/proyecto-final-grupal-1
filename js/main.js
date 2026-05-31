@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    // Animación interactiva para el menú desplegable (Dropdown)
+
     $('.dropdown-toggle').click(function(e) {
-        e.preventDefault(); // Evita que recargue la página al hacer clic
+        e.preventDefault(); 
         $(this).next('.dropdown-menu').slideToggle(300);
     });
 
-    // Cerrar el menú si se hace clic fuera de él
+  
     $(document).click(function(e) {
         var target = e.target;
         if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown')) {
