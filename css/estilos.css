@@ -267,9 +267,9 @@ scroll 40s linear infinite;
 
 .galeria-item{
 
-width:300px;
+width:250px;
 
-height:280px;
+height:200px;
 
 object-fit:contain;
 
@@ -383,5 +383,16 @@ translateX(
 
 }
 
+
+}@media (max-width: 768px){
+
+.nav-links{
+    flex-direction:column;
+}
+
+.galeria-item{
+    width:220px;
+    height:160px;
+}
 
 }
