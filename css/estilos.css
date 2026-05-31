@@ -267,17 +267,17 @@ scroll 40s linear infinite;
 
 .galeria-item{
 
+width:400px;
 
-width:300px;
+height:280px;
 
-height:300px;
-
-object-fit:cover;
+object-fit:contain;
 
 margin:0 10px;
 
 border-radius:15px;
 
+}
 
 box-shadow:
 
