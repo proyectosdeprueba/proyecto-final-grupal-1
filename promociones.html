@@ -5,6 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC & Tech Store - Promociones</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- PANEL CARRITO -->
+
+<div class="panel-carrito"
+id="panelCarrito">
+
+    <div class="carrito-top">
+
+        <h3>
+            🛒 Tu Carrito
+        </h3>
+
+        <span id="cerrarCarrito">
+
+            ✖
+
+        </span>
+
+    </div>
+
+    <div id="listaCarrito">
+
+        <p class="carrito-vacio">
+
+            Tu carrito está vacío
+
+        </p>
+
+    </div>
+
+    <div class="carrito-footer">
+
+        <h4>
+
+            Total:
+            $<span id="totalCarrito">
+
+                0
+
+            </span>
+
+        </h4>
+
+    </div>
+
+</div>
+<!-- TOAST -->
+
+<div class="toast"
+
+id="toast">
+
+<div class="toast-icon">
+
+✅
+
+</div>
+
+<div>
+
+<h4>
+Producto agregado
+</h4>
+
+<p id="toastTexto">
+
+Se agregó al carrito
+
+</p>
+
+</div>
+
+</div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
@@ -13,6 +85,25 @@
         <div class="logo">
             <h1>Pc Store</h1>
         </div>
+        <div class="menu-toggle" id="menu-toggle">
+    ☰
+</div>
+<div class="carrito-header" id="abrirCarrito">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span>
+        Carrito
+    </span>
+
+    <span class="contador-carrito"
+    id="contadorCarrito">
+
+        (0)
+
+    </span>
+
+</div>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
@@ -20,7 +111,7 @@
                 <li class="dropdown">
                     <a href="productos.html" class="dropdown-toggle">Productos y Precios ▼</a>
                     <ul class="dropdown-menu">
-                        <li><a href="productos.html#laptops">Laptops de Juguete / Pro</a></li>
+                        <li><a href="productos.html#laptops">Laptops Gamer/ Pro</a></li>
                         <li><a href="productos.html#escritorio">PCs de Escritorio</a></li>
                         <li><a href="productos.html#accesorios">Accesorios / Periféricos</a></li>
                     </ul>
@@ -41,35 +132,62 @@
         <section class="grid-productos">
             <div class="tarjeta-producto promo-destacada">
                 <span class="badge-promo">¡Ahorra 15%!</span>
-                <img src="img/promo_combo.jpg" alt="Combo Actualización">
+                <!-- Imagen de Componentes de Hardware internos -->
+                <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=500&auto=format&fit=crop" alt="Combo Actualización">
                 <h4>Combo Actualización Ryzen</h4>
                 <p>Incluye: Procesador AMD Ryzen 5 + Tarjeta Madre B550 + 16GB RAM DDR4.</p>
                 <div class="precios-promo">
                     <span class="precio-antes">$380.00</span>
                     <span class="precio-tag">$323.00</span>
                 </div>
+                <button class="btn-agregar"
+
+data-producto="Combo Ryzen"
+
+data-precio="323">
+
+🛒 Agregar al carrito
+
+</button>
+
             </div>
 
             <div class="tarjeta-producto promo-destacada">
                 <span class="badge-promo">¡Envío Gratis!</span>
-                <img src="img/promo_pc.jpg" alt="PC Setup Oficina">
+                <!-- Imagen de Setup de Oficina / Estudio Limpio -->
+                <img src="https://www.venex.com.ar/products_images/1706874121_pc-5.png" alt="PC Setup Oficina">
                 <h4>PC Office Starter</h4>
                 <p>Lista para trabajar o estudiar. Intel Core i5, 16GB RAM, SSD 480GB + Monitor 22".</p>
                 <div class="precios-promo">
                     <span class="precio-antes">$550.00</span>
                     <span class="precio-tag">$499.00</span>
                 </div>
+                <button class="btn-agregar"
+data-producto="PC Office Starter"
+data-precio="499">
+
+🛒 Agregar al carrito
+
+</button>
             </div>
 
             <div class="tarjeta-producto promo-destacada">
                 <span class="badge-promo">¡2x1 Periféricos!</span>
-                <img src="img/promo_audio.jpg" alt="Audífonos Gamer">
+                <!-- Imagen de Diadema/Audífonos Gamer -->
+                <img src="https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=500&auto=format&fit=crop" alt="Audífonos Gamer">
                 <h4>Audífonos HyperX Cloud</h4>
                 <p>Llévate el segundo par con el 50% de descuento para tu compañero de equipo.</p>
                 <div class="precios-promo">
                     <span class="precio-antes">$120.00</span>
                     <span class="precio-tag">$90.00</span>
                 </div>
+                <button class="btn-agregar"
+data-producto="Audífonos HyperX Cloud"
+data-precio="90">
+
+🛒 Agregar al carrito
+
+</button>
             </div>
         </section>
 
