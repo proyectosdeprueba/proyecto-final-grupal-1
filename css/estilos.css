@@ -1247,3 +1247,91 @@ background:#1a1a2e;
 transform:
 translateY(-2px);
 }
+
+.dark-btn{
+
+background:#e94560;
+
+border:none;
+
+padding:10px 15px;
+
+border-radius:12px;
+
+cursor:pointer;
+
+font-size:18px;
+
+color:white;
+
+transition:.3s;
+}
+
+.dark-btn:hover{
+
+transform:scale(1.08);
+}
+
+
+body.dark-mode{
+
+background:#0f172a;
+
+color:#f1f5f9;
+}
+body.dark-mode header{
+
+background:#111827;
+}
+
+
+
+body.dark-mode .tarjeta-intro,
+body.dark-mode .tarjeta-producto,
+body.dark-mode .formulario-contacto{
+
+background:#1e293b;
+
+color:white;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.3);
+}
+
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4{
+
+color:white;
+}
+
+body.dark-mode p{
+
+color:#d1d5db;
+}
+
+
+body.dark-mode footer{
+
+background:#111827;
+}
+
+
+body.dark-mode .tabla-estilo{
+
+background:#1e293b;
+
+color:white;
+}
+
+body.dark-mode th{
+
+background:#e94560;
+}
+
+body.dark-mode td{
+
+border-color:#334155;
+}
