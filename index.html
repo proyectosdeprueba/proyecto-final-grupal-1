@@ -3,175 +3,400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC & Tech Store - Inicio</title>
+    <title>PC Store - Inicio</title>
+
     <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- PANEL CARRITO -->
+
+<div class="panel-carrito"
+id="panelCarrito">
+
+    <div class="carrito-top">
+
+        <h3>
+            🛒 Tu Carrito
+        </h3>
+
+        <span id="cerrarCarrito">
+
+            ✖
+
+        </span>
+
+    </div>
+
+    <div id="listaCarrito">
+
+        <p class="carrito-vacio">
+
+            Tu carrito está vacío
+
+        </p>
+
+    </div>
+
+    <div class="carrito-footer">
+
+        <h4>
+
+            Total:
+            $<span id="totalCarrito">
+
+                0
+
+            </span>
+
+        </h4>
+
+    </div>
+
+</div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
+
 <body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+<header>
 
+    <div class="logo">
+        <h1>Pc Store</h1>
+    </div>
 
-    <header>
-        <div class="logo">
-            <h1>Pc Store</h1>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="conocenos.html">Conócenos</a></li>
-                <li class="dropdown">
-                    <a href="productos.html" class="dropdown-toggle">Productos ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="productos.html#laptops">Laptops de Juguete / Pro</a></li>
-                        <li><a href="productos.html#escritorio">PCs de Escritorio</a></li>
-                        <li><a href="productos.html#accesorios">Accesorios / Periféricos</a></li>
-                    </ul>
-                </li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="promociones.html">Promociones</a></li>
-                <li><a href="contactanos.html">Contáctanos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- MENU HAMBURGUESA -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+<div class="carrito-header" id="abrirCarrito">
 
-    <main>
-       <section class="galeria-contenedor">
+    <i class="fa-solid fa-cart-shopping"></i>
 
-<h2>
-Nuestras Novedades Tech
-</h2>
+    <span>
+        Carrito
+    </span>
 
+    <span class="contador-carrito"
+    id="contadorCarrito">
 
-<div class="slider">
+        (0)
 
-<div class="slide-track">
-
-
-<img src="img/pcgamer.png"
-class="galeria-item">
-
-
-<img src="img/monitorgamer.png"
-class="galeria-item">
-
-
-<img src="img/tecladogamer.png"
-class="galeria-item">
-
-
-<img src="img/mousegamer.png"
-class="galeria-item">
-
-
-<img src="img/lucesgamer.png"
-class="galeria-item">
-
-
-<img src="img/parlantesgamer.png"
-class="galeria-item">
-
-
-<img src="img/audigamer.png"
-class="galeria-item">
-
-
-<!-- repetir para ciclo infinito -->
-
-<img src="img/pcgamer.png"
-class="galeria-item">
-
-
-<img src="img/monitorgamer.png"
-class="galeria-item">
-
-
-<img src="img/tecladogamer.png"
-class="galeria-item">
-
-
-<img src="img/mousegamer.png"
-class="galeria-item">
-
-
-<img src="img/lucesgamer.png"
-class="galeria-item">
-
-
-<img src="img/parlantesgamer.png"
-class="galeria-item">
-
-
-<img src="img/audigamer.png"
-class="galeria-item">
-
+    </span>
 
 </div>
+    <nav>
 
-</div>
+        <ul class="nav-links">
 
-</section>
+            <li>
+                <a href="index.html" class="active">
+                    Inicio
+                </a>
+            </li>
 
-        <hr>
+            <li>
+                <a href="conocenos.html">
+                    Conócenos
+                </a>
+            </li>
 
-        <section class="introducciones">
-            <h2>Explora Nuestra Tienda</h2>
-            <div class="grid-intros">
-                <div class="tarjeta-intro">
-                    <h3>¿Quiénes Somos?</h3>
-                    <p>Líderes en tecnología con años de experiencia armando equipos de alto rendimiento...</p>
-                    <a href="conocenos.html" class="btn">Leer más</a>
-                </div>
-                <div class="tarjeta-intro">
-                    <h3>Catálogo Premium</h3>
-                    <p>Desde tarjetas gráficas de última generación hasta periféricos RGB competitivos...</p>
-                    <a href="productos.html" class="btn">Ver Productos</a>
-                </div>
-                <div class="tarjeta-intro">
-                    <h3>¡Últimas Ofertas!</h3>
-                    <p>No te pierdas los descuentos exclusivos de este mes en combos de actualización.</p>
-                    <a href="promociones.html" class="btn">Ver Promos</a>
-                </div>
+            <li class="dropdown">
+
+                <a href="productos.html"
+                class="dropdown-toggle">
+
+                    Productos ▼
+
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="productos.html#laptops">
+                            Laptops Gamer / Pro
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="productos.html#escritorio">
+                            PCs de Escritorio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="productos.html#accesorios">
+                            Accesorios / Periféricos
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="noticias.html">
+                    Noticias
+                </a>
+            </li>
+
+            <li>
+                <a href="promociones.html">
+                    Promociones
+                </a>
+            </li>
+
+            <li>
+                <a href="contactanos.html">
+                    Contáctanos
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- CARRUSEL GAMER -->
+    <section class="galeria-contenedor">
+
+        <h2>
+            Nuestras Novedades Tech
+        </h2>
+
+        <div class="slider">
+
+            <div class="slide-track">
+
+                <img src="img/pcgamer.png"
+                class="galeria-item"
+                alt="PC Gamer">
+
+                <img src="img/monitorgamer.png"
+                class="galeria-item"
+                alt="Monitor Gamer">
+
+                <img src="img/tecladogamer.png"
+                class="galeria-item"
+                alt="Teclado Gamer">
+
+                <img src="img/mousegamer.png"
+                class="galeria-item"
+                alt="Mouse Gamer">
+
+                <img src="img/lucesgamer.png"
+                class="galeria-item"
+                alt="Luces RGB">
+
+                <img src="img/parlantesgamer.png"
+                class="galeria-item"
+                alt="Parlantes Gamer">
+
+                <img src="img/audigamer.png"
+                class="galeria-item"
+                alt="Audífonos Gamer">
+
+
+                <!-- REPETIR PARA LOOP -->
+
+                <img src="img/pcgamer.png"
+                class="galeria-item"
+                alt="PC Gamer">
+
+                <img src="img/monitorgamer.png"
+                class="galeria-item"
+                alt="Monitor Gamer">
+
+                <img src="img/tecladogamer.png"
+                class="galeria-item"
+                alt="Teclado Gamer">
+
+                <img src="img/mousegamer.png"
+                class="galeria-item"
+                alt="Mouse Gamer">
+
+                <img src="img/lucesgamer.png"
+                class="galeria-item"
+                alt="Luces RGB">
+
+                <img src="img/parlantesgamer.png"
+                class="galeria-item"
+                alt="Parlantes Gamer">
+
+                <img src="img/audigamer.png"
+                class="galeria-item"
+                alt="Audífonos Gamer">
+
             </div>
-        </section>
-    </main>
 
-   <footer>
-    <p>&copy; 2026 Pc Store - Proyecto Final Programación Frontend</p>
-    <p>Elaborado por:</p>
-    <p>Marina Díaz de Rivera</p>
-    <p>Joselyn Saraí</p>
-    <p>Emerson Gómez</p>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- TARJETAS -->
+    <section class="introducciones">
+
+        <h2>
+            Explora Nuestra Tienda
+        </h2>
+
+        <div class="grid-intros">
+
+            <div class="tarjeta-intro">
+
+                <h3>
+                    ¿Quiénes Somos?
+                </h3>
+
+                <p>
+                    Líderes en tecnología con años de experiencia armando equipos de alto rendimiento.
+                </p>
+
+                <a href="conocenos.html"
+                class="btn">
+
+                    Leer más
+
+                </a>
+
+            </div>
+
+
+            <div class="tarjeta-intro">
+
+                <h3>
+                    Catálogo Premium
+                </h3>
+
+                <p>
+                    Desde tarjetas gráficas de última generación hasta periféricos RGB competitivos.
+                </p>
+
+                <a href="productos.html"
+                class="btn">
+
+                    Ver Productos
+
+                </a>
+
+            </div>
+
+
+            <div class="tarjeta-intro">
+
+                <h3>
+                    ¡Últimas Ofertas!
+                </h3>
+
+                <p>
+                    No te pierdas los descuentos exclusivos de este mes en combos de actualización.
+                </p>
+
+                <a href="promociones.html"
+                class="btn">
+
+                    Ver Promos
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 Pc Store - Proyecto Final Programación Frontend
+    </p>
+
+    <p>
+        Elaborado por:
+    </p>
+
+    <p>
+        Marina Díaz de Rivera
+    </p>
+
+    <p>
+        Joselyn Saraí
+    </p>
+
+    <p>
+        Emerson Gómez
+    </p>
+
 </footer>
+
+
+<!-- MENSAJE ROBOT -->
+
 <div class="robot-msg" id="robotMsg">
     💬 ¿Necesitas ayuda?
 </div>
+
+
+<!-- ROBOT -->
+
 <div class="robot-btn" id="robotBtn">
-    <img src="img/robot.png" alt="Robot">
+
+    <img src="img/robot.png"
+    alt="Robot">
+
 </div>
+
+
+<!-- CHAT -->
 
 <div class="chat-box" id="chatBox">
 
     <div class="chat-header">
-    🤖 TechBot
-    <span id="cerrarChat">✖</span>
-</div>
+
+        🤖 TechBot
+
+        <span id="cerrarChat">
+            ✖
+        </span>
+
+    </div>
 
     <div class="chat-body">
 
-    <p>Hola 👋</p>
-    <p>¿Cómo puedo ayudarte?</p>
+        <p>Hola 👋</p>
+        <p>¿Cómo puedo ayudarte?</p>
 
-    <button onclick="respuesta('productos')">Productos</button>
-    <button onclick="respuesta('promos')">Promociones</button>
-    <button onclick="respuesta('contacto')">Contacto</button>
-    <button onclick="respuesta('horario')">Horarios</button>
+        <button onclick="respuesta('productos')">
+            Productos
+        </button>
 
-    <div id="respuestaBot"></div>
+        <button onclick="respuesta('promos')">
+            Promociones
+        </button>
+
+        <button onclick="respuesta('contacto')">
+            Contacto
+        </button>
+
+        <button onclick="respuesta('horario')">
+            Horarios
+        </button>
+
+        <div id="respuestaBot"></div>
+
+    </div>
 
 </div>
 
-</div>
 
 <script src="js/main.js"></script>
 
