@@ -211,3 +211,68 @@ function mostrarToast(producto){
 
 
 actualizarCarrito();
+
+const darkBtn =
+document.getElementById(
+"darkModeBtn"
+);
+
+if(
+localStorage.getItem(
+"darkMode"
+)==="on"
+){
+
+document.body.classList.add(
+"dark-mode"
+);
+
+if(darkBtn){
+
+darkBtn.textContent =
+"☀️";
+
+}
+
+}
+
+if(darkBtn){
+
+darkBtn.addEventListener(
+"click",
+()=>{
+
+document.body.classList.toggle(
+"dark-mode"
+);
+
+if(
+document.body.classList.contains(
+"dark-mode"
+)
+){
+
+localStorage.setItem(
+"darkMode",
+"on"
+);
+
+darkBtn.textContent =
+"☀️";
+
+}else{
+
+localStorage.setItem(
+"darkMode",
+"off"
+);
+
+darkBtn.textContent =
+"🌙";
+
+}
+
+}
+);
+
+}
