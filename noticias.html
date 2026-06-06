@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>PC Store - Noticias</title>
+
+    <link rel="stylesheet"
+    href="css/estilos.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- PANEL CARRITO -->
+
+<div class="panel-carrito"
+id="panelCarrito">
+
+    <div class="carrito-top">
+
+        <h3>
+            🛒 Tu Carrito
+        </h3>
+
+        <span id="cerrarCarrito">
+
+            ✖
+
+        </span>
+
+    </div>
+
+    <div id="listaCarrito">
+
+        <p class="carrito-vacio">
+
+            Tu carrito está vacío
+
+        </p>
+
+    </div>
+
+    <div class="carrito-footer">
+
+        <h4>
+
+            Total:
+            $<span id="totalCarrito">
+
+                0
+
+            </span>
+
+        </h4>
+
+    </div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Pc Store</h1>
+    </div>
+
+    <!-- MENU HAMBURGUESA -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+<div class="carrito-header" id="abrirCarrito">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span>
+        Carrito
+    </span>
+
+    <span class="contador-carrito"
+    id="contadorCarrito">
+
+        (0)
+
+    </span>
+
+</div>
+    <nav>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Inicio
+                </a>
+            </li>
+
+            <li>
+                <a href="conocenos.html">
+                    Conócenos
+                </a>
+            </li>
+
+            <li class="dropdown">
+
+                <a href="productos.html"
+                class="dropdown-toggle">
+
+                    Productos ▼
+
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="productos.html#laptops">
+                            Laptops Gamer/ Pro
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="productos.html#escritorio">
+                            PCs de Escritorio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="productos.html#accesorios">
+                            Accesorios / Periféricos
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="noticias.html"
+                class="active">
+
+                    Noticias
+
+                </a>
+            </li>
+
+            <li>
+                <a href="promociones.html">
+                    Promociones
+                </a>
+            </li>
+
+            <li>
+                <a href="contactanos.html">
+                    Contáctanos
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- INTRO -->
+    <section class="productos-intro">
+
+        <h2>
+            Actualidad & Tech News
+        </h2>
+
+        <p class="subtitulo">
+
+            Mantente al día con los últimos lanzamientos de hardware, tendencias tecnológicas y el mundo del gaming.
+
+        </p>
+
+    </section>
+
+
+    <!-- NOTICIAS -->
+    <section class="grid-productos">
+
+        <!-- NOTICIA 1 -->
+        <div class="tarjeta-producto">
+
+            <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=500&auto=format&fit=crop"
+            alt="Nuevas Tarjetas Gráficas">
+
+            <h4>
+                Lanzamiento de GPUs Serie 50
+            </h4>
+
+            <p>
+
+                Las nuevas arquitecturas prometen duplicar el rendimiento en trazado de rayos con un consumo optimizado.
+
+            </p>
+
+            <a href="#"
+            class="btn">
+
+                Leer más
+
+            </a>
+
+        </div>
+
+
+        <!-- NOTICIA 2 -->
+        <div class="tarjeta-producto">
+
+            <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=500&auto=format&fit=crop"
+            alt="Procesadores Nueva Generación">
+
+            <h4>
+                Procesadores e Inteligencia Artificial
+            </h4>
+
+            <p>
+
+                Los nuevos procesadores integran núcleos dedicados exclusivamente a tareas de inteligencia artificial local.
+
+            </p>
+
+            <a href="#"
+            class="btn">
+
+                Leer más
+
+            </a>
+
+        </div>
+
+
+        <!-- NOTICIA 3 -->
+        <div class="tarjeta-producto">
+
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&auto=format&fit=crop"
+            alt="Torneo de Esports">
+
+            <h4>
+                Tendencias en Setups Competitivos
+            </h4>
+
+            <p>
+
+                Monitores de 360Hz y periféricos ultraligeros dominan las preferencias de los jugadores profesionales.
+
+            </p>
+
+            <a href="#"
+            class="btn">
+
+                Leer más
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 Pc Store - Proyecto Final Programación Frontend
+    </p>
+
+    <p>
+        Elaborado por:
+    </p>
+
+    <p>
+        Marina Díaz de Rivera
+    </p>
+
+    <p>
+        Yoselyn Saraí Maye
+    </p>
+
+    <p>
+        Emerson Gómez
+    </p>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

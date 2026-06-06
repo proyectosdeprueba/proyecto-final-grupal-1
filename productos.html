@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>PC Store - Productos</title>
+
+    <link rel="stylesheet"
+    href="css/estilos.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- PANEL CARRITO -->
+
+<div class="panel-carrito"
+id="panelCarrito">
+
+    <div class="carrito-top">
+
+        <h3>
+            🛒 Tu Carrito
+        </h3>
+
+        <span id="cerrarCarrito">
+
+            ✖
+
+        </span>
+
+    </div>
+
+    <div id="listaCarrito">
+
+        <p class="carrito-vacio">
+
+            Tu carrito está vacío
+
+        </p>
+
+    </div>
+
+    <div class="carrito-footer">
+
+        <h4>
+
+            Total:
+            $<span id="totalCarrito">
+
+                0
+
+            </span>
+
+        </h4>
+
+    </div>
+
+</div>
+<!-- TOAST -->
+
+<div class="toast"
+
+id="toast">
+
+<div class="toast-icon">
+
+✅
+
+</div>
+
+<div>
+
+<h4>
+Producto agregado
+</h4>
+
+<p id="toastTexto">
+
+Se agregó al carrito
+
+</p>
+
+</div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Pc Store</h1>
+    </div>
+
+    <!-- MENU HAMBURGUESA -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+<div class="carrito-header" id="abrirCarrito">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span>
+        Carrito
+    </span>
+
+    <span class="contador-carrito"
+    id="contadorCarrito">
+
+        (0)
+
+    </span>
+
+</div>
+    <nav>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Inicio</a></li>
+
+            <li>
+                <a href="conocenos.html">
+                    Conócenos
+                </a>
+            </li>
+
+            <li class="dropdown">
+
+                <a href="productos.html"
+                class="dropdown-toggle active">
+
+                    Productos ▼
+
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="#laptops">
+                            Laptops Gamer/ Pro
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#escritorio">
+                            PCs de Escritorio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#accesorios">
+                            Accesorios / Periféricos
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="noticias.html">
+                    Noticias
+                </a>
+            </li>
+
+            <li>
+                <a href="promociones.html">
+                    Promociones
+                </a>
+            </li>
+
+            <li>
+                <a href="contactanos.html">
+                    Contáctanos
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- INTRO -->
+    <section class="productos-intro">
+
+        <h2>
+            Nuestro Catálogo Tecnológico
+        </h2>
+
+        <p class="subtitulo">
+
+            Explora nuestros componentes y equipos seleccionados bajo los más altos estándares de rendimiento.
+
+        </p>
+
+    </section>
+
+
+    <!-- LAPTOPS -->
+    <section id="laptops"
+    class="categoria-seccion">
+
+        <div class="categoria-titulo">
+
+            <span>01</span>
+
+            <h3>
+                Laptops Gamer/ Pro
+            </h3>
+
+        </div>
+
+        <div class="grid-productos">
+
+            <div class="tarjeta-producto">
+
+                <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&auto=format&fit=crop"
+                alt="Asus ROG Strix Pro">
+
+                <h4>Asus ROG Strix Pro</h4>
+
+                <p>
+                    Potencia absoluta para gaming pesado y renderizado 3D profesional.
+                </p>
+
+                <span class="precio-tag">
+                    $1,899.00
+                </span>
+                        <button class="btn-agregar"
+data-producto="Asus ROG Strix Pro"
+data-precio="1899">
+
+🛒 Agregar al carrito
+
+</button>
+
+            </div>
+    
+
+
+            <div class="tarjeta-producto">
+
+                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&auto=format&fit=crop"
+                alt="MSI Katana Gaming">
+
+                <h4>MSI Katana Gaming</h4>
+
+                <p>
+                    El equilibrio perfecto entre rendimiento táctico y portabilidad.
+                </p>
+
+                <span class="precio-tag">
+                    $1,250.00
+                </span>
+                <button class="btn-agregar"
+data-producto="MSI Katana Gaming"
+data-precio="1250">
+
+🛒 Agregar al carrito
+
+</button>
+
+
+            </div>
+
+            <div class="tarjeta-producto">
+
+                <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=500&auto=format&fit=crop"
+                alt="Tech Junior">
+
+                <h4>Tech Junior (Estudio)</h4>
+
+                <p>
+                    Ideal para tareas escolares, navegación segura y aprendizaje inicial.
+                </p>
+
+                <span class="precio-tag">
+                    $249.00
+                </span>
+                     <button class="btn-agregar"
+data-producto="Tech Junior"
+data-precio="249">
+
+🛒 Agregar al carrito
+
+</button>
+
+            </div>
+       
+
+        </div>
+
+    </section>
+
+
+    <!-- PCs -->
+    <section id="escritorio"
+    class="categoria-seccion">
+
+        <div class="categoria-titulo">
+
+            <span>02</span>
+
+            <h3>
+                PCs de Escritorio
+            </h3>
+
+        </div>
+
+        <div class="grid-productos">
+
+            <div class="tarjeta-producto">
+
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&auto=format&fit=crop"
+                alt="PC Streamer Elite">
+
+                <h4>PC Streamer Elite</h4>
+
+                <p>
+                    Diseñada para jugar y transmitir simultáneamente sin tirones.
+                </p>
+
+                <span class="precio-tag">
+                    $2,100.00
+                </span>
+                   <button class="btn-agregar"
+data-producto="PC Streamer Elite"
+data-precio="2100">
+
+🛒 Agregar al carrito
+
+</button>
+
+
+            </div>
+         
+
+            <div class="tarjeta-producto">
+
+                <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=500&auto=format&fit=crop"
+                alt="PC Competitiva">
+
+                <h4>PC Competitiva</h4>
+
+                <p>
+                    Optimizada para exprimir al máximo los hercios de tu monitor.
+                </p>
+
+                <span class="precio-tag">
+                    $1,150.00
+                </span>
+                 <button class="btn-agregar"
+data-producto="PC Competitiva"
+data-precio="1150">
+
+🛒 Agregar al carrito
+
+</button>
+
+
+            </div>
+           
+
+            <div class="tarjeta-producto">
+
+                <img src="https://makemypc.com.au/image/pkg/workstation%20pro.png"
+                alt="PC Workstation">
+
+                <h4>PC Workstation Pro</h4>
+
+                <p>
+                    Arquitectura para IA, ingeniería y diseño avanzado.
+                </p>
+
+                <span class="precio-tag">
+                    $2,450.00
+                </span>
+                <button class="btn-agregar"
+data-producto="PC Workstation Pro"
+data-precio="2450">
+
+🛒 Agregar al carrito
+
+</button>
+
+            </div>
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- ACCESORIOS -->
+    <section id="accesorios"
+    class="categoria-seccion">
+
+        <div class="categoria-titulo">
+
+            <span>03</span>
+
+            <h3>
+                Accesorios / Periféricos
+            </h3>
+
+        </div>
+
+        <div class="grid-productos">
+
+            <div class="tarjeta-producto">
+
+                <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500&auto=format&fit=crop"
+                alt="Teclado RGB">
+
+                <h4>Teclado Mecánico RGB</h4>
+
+                <p>
+                    Switches rápidos con iluminación RGB personalizable.
+                </p>
+
+                <span class="precio-tag">
+                    $75.00
+                </span>
+                        <button class="btn-agregar"
+data-producto="Teclado Mecánico RGB"
+data-precio="75">
+
+🛒 Agregar al carrito
+
+</button>
+
+            </div>
+    
+
+
+            <div class="tarjeta-producto">
+
+                <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500&auto=format&fit=crop"
+                alt="Mouse Gamer">
+
+                <h4>Mouse Gamer Pro 25K</h4>
+
+                <p>
+                    Sensor inalámbrico de máxima precisión.
+                </p>
+
+                <span class="precio-tag">
+                    $60.00
+                </span>
+                        <button class="btn-agregar"
+data-producto='Monitor 27" 165Hz'
+data-precio="289">
+
+🛒 Agregar al carrito
+
+</button>
+
+
+            </div>
+    
+
+            <div class="tarjeta-producto">
+
+                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&auto=format&fit=crop"
+                alt="Monitor 27">
+
+                <h4>Monitor 27" 165Hz</h4>
+
+                <p>
+                    Panel IPS con colores vibrantes y respuesta ultra rápida.
+                </p>
+
+                <span class="precio-tag">
+                    $289.00
+                </span>
+                <button class="btn-agregar"
+data-producto='Monitor 27" 165Hz'
+data-precio="289">
+
+🛒 Agregar al carrito
+
+</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 Pc Store - Proyecto Final Programación Frontend
+    </p>
+
+    <p>Elaborado por:</p>
+
+    <p>Marina Díaz de Rivera</p>
+
+    <p>Yoselyn Saraí Maye</p>
+
+    <p>Emerson Gómez</p>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
